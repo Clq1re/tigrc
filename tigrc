@@ -7,6 +7,7 @@ bind generic +      !git commit --amend --allow-empty
 
 #Push
 bind generic P      ?git push -u %(remote) %(repo:head)
+bind generic <Esc>p ?git push -u -f %(remote) %(repo:head)
 
 #Pull
 bind generic U      ?git pull %(remote)
