@@ -74,4 +74,4 @@ bind diff    w      @hub browse -- compare/%(branch)?expand=1
 bind refs    w      @hub browse -- compare/%(branch)?expand=1
 
 #refresh
-set refresh-mode = after-command
+set refresh-mode = auto
