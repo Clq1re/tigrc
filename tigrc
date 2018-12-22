@@ -2,6 +2,7 @@
 bind generic C      !git commit
 bind refs    C      !git commit
 bind main    C      !git commit
+bind generic <Esc>u !git add -p %(file)
 bind generic <Esc>c !git commit --allow-empty
 bind generic +      !git commit --amend --allow-empty
 
