@@ -31,6 +31,12 @@ bind diff    H      ?git reset --hard %(commit)
 bind refs    H      ?git reset --hard %(branch)
 bind status  H      ?git reset --hard HEAD
 
+# Branch view
+bind generic    b      view-refs
+
+# Refresh
+bind generic    r      refresh
+
 #Checkout
 bind main    =      ?git checkout %(branch)
 bind refs    =      ?git checkout %(branch)
