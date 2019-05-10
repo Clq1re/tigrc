@@ -34,6 +34,9 @@ bind status  H      ?git reset --hard HEAD
 # Branch view
 bind generic    b      view-refs
 
+# Branch view
+bind generic    B      view-blame
+
 # Refresh
 bind generic    r      refresh
 
@@ -80,7 +83,10 @@ bind main    w      @hub browse -- compare/%(branch)?expand=1
 bind diff    w      @hub browse -- compare/%(branch)?expand=1
 bind refs    w      @hub browse -- compare/%(branch)?expand=1
 
-#refresh
+#Refresh
 #set refresh-mode = auto
 set refresh-mode = periodic
 set refresh-interval = 5
+
+#Stash
+bind generic <Esc>s !git stash
