@@ -93,6 +93,10 @@ bind generic S !git stash
 # Revert
 bind main    !      ?git revert %(commit)
 
+# Cherry-pick
+bind main    <Esc>k      ?git cherry-pick %(commit)
+bind diff    <Esc>k      ?git cherry-pick %(commit)
+
 
 # === Github ===
 # Open to brouse
