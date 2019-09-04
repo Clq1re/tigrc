@@ -35,7 +35,7 @@ bind generic C      !git commit
 bind refs    C      !git commit
 bind main    C      !git commit
 bind generic <Esc>u !git add -p %(file)
-bind generic <Esc>c !git commit --allow-empty
+bind generic <Esc>e !git commit --allow-empty
 bind generic +      !git commit --amend --allow-empty
 
 # Push
@@ -56,7 +56,7 @@ bind generic _      ?git reset --hard HEAD@{"%(prompt Enter HEAD@{} number: )"}
 # Reset --hard
 bind main    H      ?git reset --hard %(commit)
 
-# Checkout
+# Checkout(move) to branch
 bind main    =      ?git checkout %(branch)
 bind refs    =      ?git checkout %(branch)
 # 前に使用していたブランチへ戻る
@@ -77,9 +77,9 @@ bind main    <Esc>r ?git rebase %(commit)
 bind diff    <Esc>r ?git rebase %(commit)
 
 # Rebase -i
-bind main    I      ?git rebase -i %(branch)
-bind diff    I      ?git rebase -i %(branch)
-bind refs    I      ?git rebase -i %(branch)
+bind main    i      ?git rebase -i %(branch)
+bind diff    i      ?git rebase -i %(branch)
+bind refs    i      ?git rebase -i %(branch)
 bind main    <Esc>i ?git rebase -i %(commit)
 bind diff    <Esc>i ?git rebase -i %(commit)
 
