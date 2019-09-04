@@ -59,8 +59,8 @@ bind status  H      ?git reset --hard HEAD
 # Checkout
 bind main    =      ?git checkout %(branch)
 bind refs    =      ?git checkout %(branch)
-bind main    <Esc>= ?git checkout %(commit)
-bind generic -      ?git checkout -
+# 前に使用していたブランチへ戻る
+bind generic <Esc>=      ?git checkout -
 
 # Merge
 bind main    M      ?git merge %(branch)
