@@ -19,7 +19,7 @@ set ignore-case = true
 bind generic    b      view-refs
 
 # Blame view
-bind generic    B      view-blame
+bind generic    <Esc>b      view-blame
 
 # Cursor
 bind generic J move-page-down
