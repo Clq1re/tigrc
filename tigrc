@@ -97,6 +97,11 @@ bind main    !      ?git revert %(commit)
 bind main    <Esc>k      ?git cherry-pick %(commit)
 bind diff    <Esc>k      ?git cherry-pick %(commit)
 
+# Create branch
+bind main    B      ?git checkout -b "%(prompt Enter branch name: )" %(branch)
+bind refs    B      ?git checkout -b "%(prompt Enter branch name: )" %(branch)
+bind main    <Esc>b ?git checkout -b "%(prompt Enter branch name: )" %(commit)
+
 
 # === Github ===
 # Open to brouse
