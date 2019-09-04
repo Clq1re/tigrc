@@ -25,6 +25,9 @@ bind generic    B      view-blame
 bind generic J move-page-down
 bind generic K move-page-up
 
+# Copy commit id
+bind generic `      @bash -c "echo -n '%(commit)' | pbcopy"
+
 
 # === Commands ===
 # Commit
