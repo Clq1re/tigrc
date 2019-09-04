@@ -21,6 +21,10 @@ bind generic    b      view-refs
 # Blame view
 bind generic    B      view-blame
 
+# Cursor
+bind generic J move-page-down
+bind generic K move-page-up
+
 
 # === Commands ===
 # Commit
@@ -41,10 +45,6 @@ bind generic U      ?git pull %(remote)
 # Fetch
 bind generic F      ?git fetch %(remote)
 bind main    F      ?git fetch %(remote)
-
-# Move cursol
-bind generic J move-page-down
-bind generic K move-page-up
 
 # Reflog
 bind generic L      !sh -c "git reflog --pretty=raw | tig --pretty=raw"
@@ -84,7 +84,7 @@ bind main    <Esc>i ?git rebase -i %(commit)
 bind diff    <Esc>i ?git rebase -i %(commit)
 
 # Stash
-bind generic <Esc>s !git stash
+bind generic S !git stash
 
 
 # === Github ===
