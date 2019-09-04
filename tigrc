@@ -83,6 +83,10 @@ bind refs    I      ?git rebase -i %(branch)
 bind main    <Esc>i ?git rebase -i %(commit)
 bind diff    <Esc>i ?git rebase -i %(commit)
 
+# Remove branch
+bind refs    D      ?git branch -d %(branch)
+bind refs    <Esc>D      ?git branch -D %(branch)
+
 # Stash
 bind generic S !git stash
 
