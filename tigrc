@@ -93,6 +93,9 @@ bind refs    <Esc>D      ?git branch -D %(branch)
 # Stash
 bind generic S !git stash
 
+# Revert
+bind main    !      ?git revert %(commit)
+
 
 # === Github ===
 # Open to brouse
