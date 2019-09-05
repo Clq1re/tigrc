@@ -91,7 +91,6 @@ bind generic    <Esc>c      ?git rebase --abort
 # diff
 bind main    D ?sh -c "git diff %(commit)..%(prompt Enter commit ID: ) | tig"
 bind diff    D ?sh -c "git diff %(commit)..%(prompt Enter commit ID: ) | tig"
-bind refs    D ?sh -c "git diff %(branch)..%(prompt Enter branch name: ) | tig"
 
 # Remove branch
 bind refs    D      ?git branch -d %(branch)
