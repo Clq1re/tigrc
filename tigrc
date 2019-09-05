@@ -83,6 +83,10 @@ bind refs    i      ?git rebase -i %(branch)
 bind main    <Esc>i ?git rebase -i %(commit)
 bind diff    <Esc>i ?git rebase -i %(commit)
 
+# Rebase options
+bind generic    <Esc>y      ?git rebase --continue
+bind generic    <Esc>c      ?git rebase --abort
+
 # Remove branch
 bind refs    D      ?git branch -d %(branch)
 bind refs    <Esc>D      ?git branch -D %(branch)
