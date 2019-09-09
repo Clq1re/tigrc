@@ -9,7 +9,6 @@ set refresh-mode = periodic
 set refresh-interval = 5
 bind generic    r      refresh
 
-
 # Search
 set ignore-case = true
 
@@ -55,6 +54,8 @@ bind generic _      ?git reset --hard HEAD@{"%(prompt Enter HEAD@{} number: )"}
 
 # Reset --hard
 bind main    H      ?git reset --hard %(commit)
+bind refs    H      ?git reset --hard %(commit)
+bind status  H      ?git checkout -- %(file)
 
 # Checkout(move) to branch
 bind main    =      ?git checkout %(branch)
