@@ -27,6 +27,9 @@ bind generic K move-page-up
 # Copy commit id
 bind generic `      @bash -c "echo -n '%(commit)' | pbcopy"
 
+# Quit tig
+bind generic <Esc><Enter> quit
+
 
 # === Commands ===
 # Commit
